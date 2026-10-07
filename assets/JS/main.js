@@ -15,7 +15,6 @@ console.log(outraVariavel);
 console.log(variavelNumero);
 console.log(variavelCheiroNaSala);
 console.log(variavelIndefinida);
-console.log(variavelNula);
 
 
 
