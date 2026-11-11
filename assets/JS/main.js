@@ -36,8 +36,8 @@ const conceito2T = 2.0;
 const conceito3T = 5.0;
 
 const media = ((conceito1T + conceito2T + conceito3T)/3)
-const resultado = media >= 7 ? 'Aprovado' : 'Reprovado';
+let resultado = media >= 7 ? 'Aprovado' : 'Reprovado';
 
-console.log(`O aluno ${aluno} obteve média ${media.toFixed(2)} e foi ${resultado}`)
+//document.getElementById('saida').textContent = `O aluno ${aluno} obteve média ${media.toFixed(2)} e foi ${resultado}`;
 
-document.getElementById('saida').textContent = `O aluno ${aluno} obteve média ${media.toFixed(2)} e foi ${resultado}`;
+//console.log(`O aluno ${aluno} obteve média ${media.toFixed(2)} e foi ${resultado}`)
