@@ -28,7 +28,7 @@ for (let linha = 1; linha <= 8; linha++) {
 console.log("      |||");
 console.log("      |||");
 
-*/
+
 const qtdeAlunos = Number(prompt('Quantos alunos em sala?'));
 let soma = 0;
 let maior = -Infinity;
@@ -45,3 +45,20 @@ for (let j =1; j <=qtdeAlunos; j++) {
 console.log(`Média geral ${(soma/qtdeAlunos).toFixed(1)}`)
 console.log(`Maior: ${maior} | Menor: ${menor}`)
 console.log(`Quantidade de aprovados: ${aprovados}`)
+
+*/
+const numeroSorteado = Math.floor(Math.random() * 100) + 1;
+console.log("O número é " + numeroSorteado);
+const chances = prompt('Quantas vezes vc quer poder tentar o chute?');
+console.log("Tentativas: " + chances)
+
+for (let tentativas = 1; tentativas <= chances; tentativas++) {
+    let res = Number(prompt('Diga um número entre 1 a 100'));
+    console.log(res)
+    if (res === numeroSorteado) {
+        alert("Bahh, pabéms. vc ganhou");
+        break;
+    } else {
+        alert("HÁ, erro troxa");
+    }
+}
